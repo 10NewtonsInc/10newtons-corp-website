@@ -101,8 +101,7 @@ export interface Member {
   bio: string
 }
 
-// TODO: replace with the CTO's actual name.
-const CTO_NAME = 'Your Name'
+const CTO_NAME = 'Reto Matter'
 
 export const team: Member[] = [
   {
