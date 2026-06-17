@@ -26,7 +26,7 @@ export default function ArchitectureDiagram() {
         component="svg"
         viewBox="0 0 1040 250"
         role="img"
-        aria-label="10 Newtons architecture: Capture App to API Backend to Insights Worker to Clinical Portal, over a shared PostgreSQL data store"
+        aria-label="10 Newtons architecture: Capture App to API Backend to Insights Worker to Clinical Portal, over a shared database"
         sx={{ width: '100%', height: 'auto', display: 'block' }}
       >
         {/* arrows + labels */}
@@ -64,10 +64,10 @@ export default function ArchitectureDiagram() {
           </g>
         ))}
 
-        {/* PostgreSQL data store */}
+        {/* shared data store */}
         <rect x={280} y={170} width={480} height={54} rx={12} fill={colors.navy} />
         <text x={520} y={193} textAnchor="middle" fontFamily="Montserrat, sans-serif" fontSize={15} fontWeight={600} fill="#fff">
-          PostgreSQL
+          Database
         </text>
         <text x={520} y={212} textAnchor="middle" fontFamily="Inter, sans-serif" fontSize={12} fill="#C5C7D2">
           one secure, multi-tenant system of record

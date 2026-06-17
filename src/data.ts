@@ -249,7 +249,7 @@ export const cloud = [
   },
   {
     title: 'Managed & codified',
-    body: 'Managed PostgreSQL and object storage, all provisioned as code with Terraform for repeatable environments.',
+    body: 'A managed database and object storage, all provisioned as code for repeatable, auditable environments.',
   },
   {
     title: 'Self-healing pipeline',
