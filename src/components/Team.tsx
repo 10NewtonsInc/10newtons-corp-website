@@ -1,4 +1,5 @@
-import { Box, Container, Typography, Avatar } from '@mui/material'
+import { Box, Container, Typography, Avatar, IconButton } from '@mui/material'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import SectionHeading from './SectionHeading'
 import { team } from '../data'
 import { colors } from '../theme'
@@ -61,10 +62,25 @@ export default function Team() {
               >
                 {initials(m.name)}
               </Avatar>
-              <Box>
-                <Typography variant="h6" sx={{ fontSize: '1.2rem', lineHeight: 1.2 }}>
-                  {m.name}
-                </Typography>
+              <Box sx={{ minWidth: 0 }}>
+                <Box sx={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 1 }}>
+                  <Typography variant="h6" sx={{ fontSize: '1.2rem', lineHeight: 1.2 }}>
+                    {m.name}
+                  </Typography>
+                  {m.linkedin && (
+                    <IconButton
+                      component="a"
+                      href={m.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${m.name} on LinkedIn`}
+                      size="small"
+                      sx={{ color: colors.teal, mt: -0.5, mr: -0.5 }}
+                    >
+                      <LinkedInIcon fontSize="small" />
+                    </IconButton>
+                  )}
+                </Box>
                 <Typography
                   sx={{
                     fontFamily: '"Montserrat"',

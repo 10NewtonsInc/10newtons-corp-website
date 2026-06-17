@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link as RouterLink } from 'react-router-dom'
 import {
   AppBar,
   Toolbar,
@@ -15,11 +16,13 @@ import MenuIcon from '@mui/icons-material/Menu'
 import Logo from './Logo'
 import { CONTACT_EMAIL } from '../data'
 
-const links = [
-  { label: 'Platform', href: '#platform' },
-  { label: 'How it works', href: '#how' },
-  { label: 'Science', href: '#science' },
-  { label: 'Team', href: '#team' },
+// Section links resolve to the home page + hash so they work from any route;
+// `page` links are real routes.
+const links: { label: string; to: string; page?: boolean }[] = [
+  { label: 'How it works', to: '/#how' },
+  { label: 'Science', to: '/#science' },
+  { label: 'Technology', to: '/technology', page: true },
+  { label: 'Team', to: '/#team' },
 ]
 
 export default function NavBar() {
@@ -32,12 +35,12 @@ export default function NavBar() {
     >
       <Container>
         <Toolbar disableGutters sx={{ minHeight: 72, justifyContent: 'space-between' }}>
-          <Box component="a" href="#top" sx={{ textDecoration: 'none' }}>
+          <Box component={RouterLink} to="/" sx={{ textDecoration: 'none' }}>
             <Logo />
           </Box>
           <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', gap: 1 }}>
             {links.map((l) => (
-              <Button key={l.href} href={l.href} color="inherit" sx={{ color: 'text.primary', fontWeight: 500 }}>
+              <Button key={l.to} component={RouterLink} to={l.to} color="inherit" sx={{ color: 'text.primary', fontWeight: 500 }}>
                 {l.label}
               </Button>
             ))}
@@ -54,7 +57,7 @@ export default function NavBar() {
         <Box sx={{ width: 250, pt: 2 }} role="presentation" onClick={() => setOpen(false)}>
           <List>
             {links.map((l) => (
-              <ListItemButton key={l.href} component="a" href={l.href}>
+              <ListItemButton key={l.to} component={RouterLink} to={l.to}>
                 <ListItemText primary={l.label} />
               </ListItemButton>
             ))}

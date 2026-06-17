@@ -1,13 +1,14 @@
 import { Box, Container, Typography, Link, Stack } from '@mui/material'
+import { Link as RouterLink } from 'react-router-dom'
 import Logo from './Logo'
 import { CONTACT_EMAIL } from '../data'
 import { colors } from '../theme'
 
 const links = [
-  { label: 'Platform', href: '#platform' },
-  { label: 'How it works', href: '#how' },
-  { label: 'Science', href: '#science' },
-  { label: 'Team', href: '#team' },
+  { label: 'How it works', to: '/#how' },
+  { label: 'Science', to: '/#science' },
+  { label: 'Technology', to: '/technology' },
+  { label: 'Team', to: '/#team' },
 ]
 
 export default function Footer() {
@@ -22,7 +23,7 @@ export default function Footer() {
           <Logo light />
           <Stack direction="row" spacing={3} sx={{ flexWrap: 'wrap' }}>
             {links.map((l) => (
-              <Link key={l.href} href={l.href} underline="hover" sx={{ color: colors.navyLight }}>
+              <Link key={l.to} component={RouterLink} to={l.to} underline="hover" sx={{ color: colors.navyLight }}>
                 {l.label}
               </Link>
             ))}

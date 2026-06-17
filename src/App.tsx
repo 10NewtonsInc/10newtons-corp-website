@@ -1,27 +1,15 @@
-import NavBar from './components/NavBar'
-import Hero from './components/Hero'
-import Pillars from './components/Pillars'
-import HowItWorks from './components/HowItWorks'
-import Science from './components/Science'
-import Platform from './components/Platform'
-import Team from './components/Team'
-import ContactCTA from './components/ContactCTA'
-import Footer from './components/Footer'
+import { Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
+import Home from './pages/Home'
+import Technology from './pages/Technology'
 
 export default function App() {
   return (
-    <>
-      <NavBar />
-      <main>
-        <Hero />
-        <Pillars />
-        <HowItWorks />
-        <Science />
-        <Platform />
-        <Team />
-        <ContactCTA />
-      </main>
-      <Footer />
-    </>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="technology" element={<Technology />} />
+      </Route>
+    </Routes>
   )
 }

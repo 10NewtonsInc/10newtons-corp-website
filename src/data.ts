@@ -98,6 +98,7 @@ export interface Member {
   role: string
   org?: string
   photo?: string
+  linkedin?: string
   bio: string
 }
 
@@ -108,24 +109,28 @@ export const team: Member[] = [
     name: 'Carla Pugh, MD, PhD',
     role: 'Founder & Chief Medical Officer',
     photo: '/team/carla.jpg',
+    linkedin: '', // TODO: add Carla's LinkedIn profile URL
     bio: 'A Stanford surgery professor and pioneer in using motion and sensor technology to measure clinical skill, Carla founded 10 Newtons to turn decades of research into an objective standard for surgical training. Her work has reshaped how procedural competence is assessed across medicine.',
   },
   {
     name: 'Erwan Rivet',
     role: 'Chief Executive Officer',
     photo: '/team/erwan.jpg',
+    linkedin: '', // TODO: add Erwan's LinkedIn profile URL
     bio: "A digital-health executive with 20+ years scaling regulated medtech from concept to market, Erwan leads 10 Newtons' commercialization and growth, drawing on a track record of bringing clinical and consumer health products to market.",
   },
   {
     name: CTO_NAME,
     role: 'Chief Technology Officer',
     photo: '/team/cto.jpg',
+    linkedin: '', // TODO: add Reto's LinkedIn profile URL
     bio: "A technology leader with 30+ years building data and AI platforms in regulated healthcare. He led engineering and privacy at Octave's AI diagnostics platform and earlier advised Nemaris — a surgical-simulation pioneer acquired by Globus Medical — bringing rare command of healthcare AI, compliance, and the operating room to 10 Newtons.",
   },
   {
     name: 'Jon Brilliant',
     role: 'Chief Financial Officer',
     photo: '/team/jon.jpg',
+    linkedin: '', // TODO: add Jon's LinkedIn profile URL
     bio: 'A serial healthcare entrepreneur and operator, Jon has founded and scaled companies including Welldoc, Bigfoot Biomedical, and Luna Diabetes, with deep experience financing and building regulated digital-health businesses.',
   },
 ]
@@ -134,4 +139,97 @@ export const stats = [
   { value: '256 Hz', label: 'EEG capture, plus dual-hand motion' },
   { value: '8', label: 'objective biomarkers per session' },
   { value: '1', label: 'continuous workflow, capture to insight' },
+]
+
+// ---------------------------------------------------------------------------
+// Technology page content (seeded from the 10 Newtons technology deck)
+// ---------------------------------------------------------------------------
+
+export const techStats = [
+  { value: '4', label: 'production services, capture to portal' },
+  { value: '256 Hz', label: 'EEG, plus dual-hand motion at 50 Hz' },
+  { value: '8', label: 'biomarkers scored per session' },
+  { value: '1,100+', label: 'automated tests across the stack' },
+]
+
+export const services = [
+  {
+    n: '01',
+    title: 'Capture App',
+    body: 'Tablet app pairing a Muse EEG headband and two hand sensors. On-device sensor fusion, crash-safe recording, direct-to-cloud upload.',
+  },
+  {
+    n: '02',
+    title: 'API Backend',
+    body: 'Multi-tenant API handling auth and 2FA, device enrollment, audit trail, and participant & session management.',
+  },
+  {
+    n: '03',
+    title: 'Insights Worker',
+    body: 'An independent scoring pool computing EEG cognitive and motion biomarkers, scaling horizontally as volume grows.',
+  },
+  {
+    n: '04',
+    title: 'Clinical Portal',
+    body: 'Role-aware dashboards for platform staff, training organizations, and individual surgeons.',
+  },
+]
+
+export const sensors = [
+  {
+    title: 'Muse — EEG',
+    spec: '4 channels @ 256 Hz',
+    body: 'Frontal & temporal cortical activity for cognitive biomarkers.',
+    accent: 'teal',
+  },
+  {
+    title: 'Hand sensor — left',
+    spec: 'accel + gyro @ 50 Hz',
+    body: 'Dominant-hand motion, speed and rotation.',
+    accent: 'purple',
+  },
+  {
+    title: 'Hand sensor — right',
+    spec: 'accel + gyro @ 50 Hz',
+    body: 'Non-dominant-hand motion, speed and rotation.',
+    accent: 'blue',
+  },
+]
+
+export const security = [
+  {
+    title: 'Layered authentication',
+    body: 'Verified accounts, TOTP two-factor, short-lived sessions with server-side revocation, and device-scoped credentials.',
+  },
+  {
+    title: 'Encrypted by default',
+    body: 'Encrypted secrets at rest, on-device key storage for enrolled capture devices, and TLS in transit.',
+  },
+  {
+    title: 'Full audit trail',
+    body: 'Every state-changing action is recorded with actor, target and before/after detail — and secrets are redacted from logs.',
+  },
+  {
+    title: 'Out of HIPAA scope by design',
+    body: 'Participants are clinicians, not patients — no patient identifiers enter capture, scoring or storage.',
+  },
+]
+
+export const cloud = [
+  {
+    title: 'Multi-account AWS',
+    body: 'Separate management, development, staging and production accounts with per-environment network isolation.',
+  },
+  {
+    title: 'Managed & codified',
+    body: 'Managed PostgreSQL and object storage, all provisioned as code with Terraform for repeatable environments.',
+  },
+  {
+    title: 'Self-healing pipeline',
+    body: 'A durable job queue with sub-second dispatch and a polling fallback — jobs survive restarts and any worker can resume them.',
+  },
+  {
+    title: 'Live observability',
+    body: 'System-status monitoring, per-worker heartbeats, and in-field crash triage keep the platform running unattended.',
+  },
 ]
