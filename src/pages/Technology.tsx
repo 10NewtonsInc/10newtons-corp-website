@@ -3,7 +3,8 @@ import { colors } from '../theme'
 import SectionHeading from '../components/SectionHeading'
 import Science from '../components/Science'
 import ContactCTA from '../components/ContactCTA'
-import { techStats, services, sensors, security, cloud } from '../data'
+import ArchitectureDiagram from '../components/ArchitectureDiagram'
+import { techStats, services, sensors, security, cloud, dataJourney, differentiators } from '../data'
 
 const accentMap: Record<string, string> = {
   teal: colors.teal,
@@ -59,6 +60,9 @@ function Architecture() {
           title="Four production services, one system of record"
           subtitle="Data travels from the operating field to objective insight through independently deployable services, coordinated by a single database."
         />
+        <Box sx={{ bgcolor: '#fff', border: '1px solid', borderColor: 'divider', borderRadius: 3, p: { xs: 2, md: 4 }, mb: 3 }}>
+          <ArchitectureDiagram />
+        </Box>
         <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)', md: 'repeat(4, 1fr)' }, gap: 2.5 }}>
           {services.map((s) => (
             <Box key={s.n} sx={{ bgcolor: colors.card, border: '1px solid', borderColor: 'divider', borderRadius: 3, p: 3 }}>
@@ -68,17 +72,53 @@ function Architecture() {
             </Box>
           ))}
         </Box>
-        <Box sx={{ mt: 3, bgcolor: colors.navy, color: '#fff', borderRadius: 3, p: { xs: 2.5, md: 3 }, textAlign: 'center' }}>
-          <Typography sx={{ fontWeight: 300, color: colors.navyLight }}>
-            <Box component="span" sx={{ fontFamily: '"Montserrat"', fontWeight: 600, color: '#fff' }}>
-              Capture
-            </Box>{' '}
-            → upload → score → persist →{' '}
-            <Box component="span" sx={{ fontFamily: '"Montserrat"', fontWeight: 600, color: '#fff' }}>
-              visualize
-            </Box>{' '}
-            · durable at every step, on a self-healing job queue.
-          </Typography>
+      </Container>
+    </Box>
+  )
+}
+
+function DataJourney() {
+  return (
+    <Box sx={{ py: { xs: 8, md: 12 }, bgcolor: colors.card }}>
+      <Container>
+        <SectionHeading
+          eyebrow="End to end"
+          title="From sensor to insight"
+          subtitle="A single session flows through five stages — durable at every step, so no data is lost between the operating field and the dashboard."
+        />
+        <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)', md: 'repeat(5, 1fr)' }, gap: 2 }}>
+          {dataJourney.map((s) => (
+            <Box key={s.n} sx={{ position: 'relative', bgcolor: '#fff', border: '1px solid', borderColor: 'divider', borderRadius: 3, p: 2.5 }}>
+              <Box sx={{ width: 8, height: 8, borderRadius: '50%', bgcolor: colors.teal, position: 'absolute', top: 18, right: 18 }} />
+              <Typography sx={{ fontFamily: '"Montserrat"', fontWeight: 700, color: colors.teal, mb: 0.5 }}>{s.n}</Typography>
+              <Typography variant="h6" sx={{ fontSize: '1.05rem', mb: 1 }}>{s.title}</Typography>
+              <Typography variant="body2" sx={{ color: colors.cardBody, fontSize: '0.9rem' }}>{s.body}</Typography>
+            </Box>
+          ))}
+        </Box>
+      </Container>
+    </Box>
+  )
+}
+
+function Differentiators() {
+  const accents = [colors.teal, colors.purple, colors.blue, colors.teal]
+  return (
+    <Box sx={{ py: { xs: 8, md: 12 } }}>
+      <Container>
+        <SectionHeading
+          eyebrow="What sets it apart"
+          title="Not a score at the end — insight in the moment"
+          subtitle="The platform connects what the brain and hands were doing to exactly when it happened, and to what mastery looks like."
+        />
+        <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', md: 'repeat(2, 1fr)' }, gap: 3 }}>
+          {differentiators.map((d, i) => (
+            <Box key={d.title} sx={{ position: 'relative', bgcolor: colors.card, border: '1px solid', borderColor: 'divider', borderRadius: 3, p: { xs: 3, md: 3.5 }, pl: { xs: 3.25, md: 3.75 }, overflow: 'hidden' }}>
+              <Box sx={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 6, bgcolor: accents[i % accents.length] }} />
+              <Typography variant="h6" sx={{ fontSize: '1.2rem', mb: 1 }}>{d.title}</Typography>
+              <Typography variant="body2" sx={{ color: colors.cardBody }}>{d.body}</Typography>
+            </Box>
+          ))}
         </Box>
       </Container>
     </Box>
@@ -140,8 +180,10 @@ export default function Technology() {
     <>
       <TechHero />
       <Architecture />
+      <DataJourney />
       <Capture />
       <Science />
+      <Differentiators />
       <CardGrid
         eyebrow="Security & compliance"
         title="Defense in depth, audit-ready"

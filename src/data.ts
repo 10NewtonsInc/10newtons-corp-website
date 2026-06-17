@@ -215,6 +215,33 @@ export const security = [
   },
 ]
 
+export const dataJourney = [
+  { n: '1', title: 'Capture', body: 'EEG, dual-hand motion and video are recorded crash-safe on a tablet — practice rig or live OR.' },
+  { n: '2', title: 'Upload', body: 'The session is uploaded securely to the cloud the moment a connection is available.' },
+  { n: '3', title: 'Score', body: 'An automated pipeline computes objective cognitive and motion biomarkers for each phase.' },
+  { n: '4', title: 'Sync', body: 'Every biomarker is time-aligned to the procedure video, second by second.' },
+  { n: '5', title: 'Visualize', body: 'Dashboards render scores, the cognitive trace and faculty comparisons.' },
+]
+
+export const differentiators = [
+  {
+    title: 'Synced to the video',
+    body: 'Every biomarker is aligned to the procedure video, so a spike in workload maps to the exact moment and maneuver that caused it — not just an aggregate at the end.',
+  },
+  {
+    title: 'Benchmarked to mastery',
+    body: 'Performance is scored against faculty “practice-ready” baselines, with program-level mastery rates and peer comparison on the same procedure.',
+  },
+  {
+    title: 'The cognitive trace',
+    body: 'Focus and engagement replayed across the entire case, with the highest- and lowest-focus moments surfaced and labeled automatically.',
+  },
+  {
+    title: 'Objective and reproducible',
+    body: 'Every metric is computed from the raw signal, versioned, and traceable back to the moment it was measured — defensible under scrutiny.',
+  },
+]
+
 export const cloud = [
   {
     title: 'Multi-account AWS',
