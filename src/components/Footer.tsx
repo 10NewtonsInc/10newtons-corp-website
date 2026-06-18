@@ -9,6 +9,7 @@ const links = [
   { label: 'Science', to: '/#science' },
   { label: 'Technology', to: '/technology' },
   { label: 'Team', to: '/#team' },
+  { label: 'Research', to: '/#research' },
 ]
 
 export default function Footer() {

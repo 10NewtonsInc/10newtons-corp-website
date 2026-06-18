@@ -29,8 +29,16 @@ describe('Corporate site', () => {
   it('renders the five-step journey and the team', () => {
     renderAt('/')
     expect(screen.getByRole('heading', { name: /from the operating field/i })).toBeInTheDocument()
-    expect(screen.getByText(/Carla Pugh/i)).toBeInTheDocument()
+    expect(screen.getByText(/Carla Pugh, MD, PhD/i)).toBeInTheDocument()
     expect(screen.getByText(/Reto Matter/i)).toBeInTheDocument()
+  })
+
+  it('renders the research section with verified citations', () => {
+    renderAt('/')
+    expect(screen.getByRole('heading', { name: /two decades of peer-reviewed research/i })).toBeInTheDocument()
+    const pubmedLinks = screen.getAllByRole('link', { name: /view on pubmed/i })
+    expect(pubmedLinks.length).toBeGreaterThanOrEqual(5)
+    expect(pubmedLinks[0]).toHaveAttribute('href', expect.stringContaining('pubmed.ncbi.nlm.nih.gov'))
   })
 
   it('renders the dedicated technology page', () => {

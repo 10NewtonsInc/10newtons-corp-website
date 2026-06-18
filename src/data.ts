@@ -141,6 +141,61 @@ export const stats = [
   { value: '1', label: 'continuous workflow, capture to insight' },
 ]
 
+// Peer-reviewed research behind objective, sensor-based skill measurement —
+// led/co-authored by founder Dr. Carla Pugh. Citations verified against PubMed.
+export interface Publication {
+  journal: string
+  year: number
+  title: string
+  note: string
+  url: string
+}
+
+export const research: Publication[] = [
+  {
+    journal: 'J Am Coll Surg',
+    year: 2025,
+    title: 'Novel Use of Objective Sensor Technology: Creation of Individualized Education Plans to Develop Operative Mastery',
+    note: 'Wearable motion sensors set mastery benchmarks and build individualized training plans — the model 10 Newtons productizes.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/39807792/',
+  },
+  {
+    journal: 'Academic Medicine',
+    year: 2024,
+    title: 'Sensor-Based Discovery of Search and Palpation Modes in the Clinical Breast Examination',
+    note: 'Sensors plus machine learning on 152 physicians — objective force data distinguished mastery-level performers.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/38207081/',
+  },
+  {
+    journal: 'Int J Comput Assist Radiol Surg',
+    year: 2022,
+    title: 'Using open surgery simulation kinematic data for tool and gesture recognition',
+    note: 'Motion sensors and deep learning automatically recognize surgical gestures and tools.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/35419721/',
+  },
+  {
+    journal: 'ACS Biomater. Sci. Eng.',
+    year: 2020,
+    title: 'Sensors and Psychomotor Metrics: A Unique Opportunity to Close the Gap on Surgical Processes and Outcomes',
+    note: 'Motion-tracking metrics quantify distinct dimensions of the surgical process — efficiency, readiness, errors.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/33463275/',
+  },
+  {
+    journal: 'New England Journal of Medicine',
+    year: 2015,
+    title: 'Sensor technology in assessments of clinical skill',
+    note: 'Sensor-derived force data distinguishes successful from unsuccessful clinical technique.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/25693026/',
+  },
+  {
+    journal: 'JAMA',
+    year: 2001,
+    title: 'Use of a mechanical simulator to assess pelvic examination skills',
+    note: 'The origin: objective, sensor-based assessment of a hands-on clinical skill.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/11559282/',
+  },
+]
+
 // ---------------------------------------------------------------------------
 // Technology page content (seeded from the 10 Newtons technology deck)
 // ---------------------------------------------------------------------------
