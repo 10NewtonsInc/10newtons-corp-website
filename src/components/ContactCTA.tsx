@@ -1,6 +1,6 @@
 import { Box, Container, Typography, Button } from '@mui/material'
 import { colors } from '../theme'
-import { CONTACT_EMAIL } from '../data'
+import { CONTACT_EMAIL, DEMO_MAILTO } from '../data'
 
 export default function ContactCTA() {
   return (
@@ -15,9 +15,15 @@ export default function ContactCTA() {
         <Typography sx={{ mt: 2.5, color: colors.navyLight, fontWeight: 300, fontSize: '1.15rem', maxWidth: 600, mx: 'auto' }}>
           For institutions, investors and partners who want to put objective skill measurement in front of surgeons.
         </Typography>
-        <Button variant="contained" size="large" href={`mailto:${CONTACT_EMAIL}`} sx={{ mt: 4 }}>
-          {CONTACT_EMAIL}
+        <Button variant="contained" size="large" href={DEMO_MAILTO} sx={{ mt: 4 }}>
+          Request a demo
         </Button>
+        <Typography sx={{ mt: 2.5, color: colors.navyLight }}>
+          or email us at{' '}
+          <Box component="a" href={`mailto:${CONTACT_EMAIL}`} sx={{ color: '#fff', textDecoration: 'none', borderBottom: '1px solid rgba(255,255,255,0.4)' }}>
+            {CONTACT_EMAIL}
+          </Box>
+        </Typography>
       </Container>
     </Box>
   )

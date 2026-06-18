@@ -14,7 +14,7 @@ import {
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import Logo from './Logo'
-import { CONTACT_EMAIL } from '../data'
+import { DEMO_MAILTO } from '../data'
 
 // Section links resolve to the home page + hash so they work from any route;
 // `page` links are real routes.
@@ -44,8 +44,8 @@ export default function NavBar() {
                 {l.label}
               </Button>
             ))}
-            <Button variant="contained" href={`mailto:${CONTACT_EMAIL}`} sx={{ ml: 1 }}>
-              Get in touch
+            <Button variant="contained" href={DEMO_MAILTO} sx={{ ml: 1 }}>
+              Request a demo
             </Button>
           </Box>
           <IconButton sx={{ display: { xs: 'inline-flex', md: 'none' } }} onClick={() => setOpen(true)} aria-label="menu">
@@ -61,8 +61,8 @@ export default function NavBar() {
                 <ListItemText primary={l.label} />
               </ListItemButton>
             ))}
-            <ListItemButton component="a" href={`mailto:${CONTACT_EMAIL}`}>
-              <ListItemText primary="Get in touch" />
+            <ListItemButton component="a" href={DEMO_MAILTO}>
+              <ListItemText primary="Request a demo" />
             </ListItemButton>
           </List>
         </Box>

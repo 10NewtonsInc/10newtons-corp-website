@@ -2,6 +2,28 @@
 // existing 10newtons.com site. Single source of truth for the marketing site.
 
 export const CONTACT_EMAIL = 'hello@10newtons.com'
+export const DEMO_MAILTO = `mailto:${CONTACT_EMAIL}?subject=Request%20a%20demo%20%E2%80%94%2010%20Newtons`
+
+// Honest credibility markers (not endorsements): research lineage, clinical
+// trials, and the founder's National Academy of Medicine election.
+export const affiliations = [
+  { name: 'Stanford', note: 'Founding research' },
+  { name: 'IRCAD', note: 'Clinical trials' },
+  { name: 'National Academy of Medicine', note: 'Founder, elected 2021' },
+]
+
+export const productShots = [
+  {
+    src: '/product/participant-dashboard.png',
+    title: 'The surgeon view',
+    caption: 'Each surgeon’s performance against faculty “practice-ready” standards — duration, focus, engagement and bimanual dexterity per procedure, plus the full cognitive trace.',
+  },
+  {
+    src: '/product/program-dashboard.png',
+    title: 'The program view',
+    caption: 'Objective performance across every surgeon in a training program — focus, duration and dexterity at a glance, with mastery benchmarking.',
+  },
+]
 
 export const pillars = [
   {
