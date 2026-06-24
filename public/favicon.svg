@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88">
+  <!--
+    Browser-tab favicon. Distinct from `logo-mark.svg` (which lives
+    on the green topbar at ~32×32 where the dark outer-ring colors
+    read fine against the topbar's tinted background).
+
+    The tab favicon needs to read at 16×16 against EITHER a light or
+    dark browser tab — Chrome's default light tab AND Firefox /
+    Safari dark-mode tabs. Two adjustments vs. logo-mark.svg:
+
+      1. A bright rounded-square card behind the dots. White-with-a-
+         hint-of-green so the dark teal outer ring has contrast to
+         show against in BOTH tab themes. The rounding (rx=14) makes
+         the icon feel like a brand mark, not a clipped circle.
+      2. Outer-ring colors lifted ~25% (lightness boost + saturation
+         bump). The dot pattern still reads as concentric rings; just
+         brighter than the source so 16×16 renders aren't muddy.
+
+    Keep `logo-mark.svg` in sync if the brand mark changes — the
+    pattern + positions here mirror it; only colors + the bg card
+    differ.
+  -->
+  <rect width="88" height="88" rx="14" fill="#f0fdf4"/>
+  <g>
+    <!-- Center -->
+    <circle cx="44.00" cy="44.00" r="2.38" fill="#d0de45"/>
+    <circle cx="50.48" cy="47.13" r="2.34" fill="#97ca41"/>
+    <circle cx="44.53" cy="51.18" r="2.34" fill="#8dc743"/>
+    <circle cx="38.05" cy="48.05" r="2.34" fill="#82c346"/>
+    <circle cx="37.52" cy="40.87" r="2.34" fill="#81c347"/>
+    <circle cx="43.47" cy="36.82" r="2.34" fill="#8bc644"/>
+    <circle cx="49.95" cy="39.95" r="2.34" fill="#97c941"/>
+    <!-- Ring 2 -->
+    <circle cx="52.95" cy="55.28" r="2.30" fill="#5cb654"/>
+    <circle cx="46.11" cy="58.24" r="2.30" fill="#54b159"/>
+    <circle cx="38.71" cy="57.39" r="2.30" fill="#4aac5f"/>
+    <circle cx="32.72" cy="52.95" r="2.30" fill="#42a764"/>
+    <circle cx="29.76" cy="46.11" r="2.30" fill="#3fa566"/>
+    <circle cx="30.61" cy="38.71" r="2.30" fill="#40a665"/>
+    <circle cx="35.05" cy="32.72" r="2.30" fill="#45a962"/>
+    <circle cx="41.89" cy="29.76" r="2.30" fill="#4eae5d"/>
+    <circle cx="49.29" cy="30.61" r="2.30" fill="#58b357"/>
+    <circle cx="55.28" cy="35.05" r="2.30" fill="#5fb752"/>
+    <circle cx="58.24" cy="41.89" r="2.30" fill="#63b950"/>
+    <circle cx="57.39" cy="49.29" r="2.30" fill="#62b951"/>
+    <!-- Ring 3 -->
+    <circle cx="48.73" cy="65.08" r="2.26" fill="#2bb097"/>
+    <circle cx="41.24" cy="65.42" r="2.26" fill="#28ad98"/>
+    <circle cx="34.08" cy="63.19" r="2.26" fill="#25a896"/>
+    <circle cx="28.11" cy="58.63" r="2.26" fill="#23a395"/>
+    <circle cx="24.07" cy="52.32" r="2.26" fill="#229f95"/>
+    <circle cx="22.42" cy="45.00" r="2.26" fill="#229e95"/>
+    <circle cx="23.38" cy="37.56" r="2.26" fill="#229f95"/>
+    <circle cx="26.83" cy="30.90" r="2.26" fill="#23a195"/>
+    <circle cx="32.35" cy="25.81" r="2.26" fill="#24a496"/>
+    <circle cx="39.27" cy="22.92" r="2.26" fill="#27a896"/>
+    <circle cx="46.76" cy="22.58" r="2.26" fill="#29ad97"/>
+    <circle cx="53.92" cy="24.81" r="2.26" fill="#33b291"/>
+    <circle cx="59.89" cy="29.37" r="2.26" fill="#3cb68d"/>
+    <circle cx="63.93" cy="35.68" r="2.26" fill="#41b98a"/>
+    <circle cx="65.58" cy="43.00" r="2.26" fill="#43ba88"/>
+    <circle cx="64.62" cy="50.44" r="2.26" fill="#42ba89"/>
+    <circle cx="61.17" cy="57.10" r="2.26" fill="#3db78c"/>
+    <circle cx="55.65" cy="62.19" r="2.26" fill="#35b390"/>
+    <!-- Ring 4 -->
+    <circle cx="37.46" cy="72.05" r="2.22" fill="#1ea092"/>
+    <circle cx="30.42" cy="69.40" r="2.22" fill="#1c9c92"/>
+    <circle cx="24.31" cy="65.02" r="2.22" fill="#1b9991"/>
+    <circle cx="19.54" cy="59.21" r="2.22" fill="#1a9690"/>
+    <circle cx="16.44" cy="52.36" r="2.22" fill="#1a948e"/>
+    <circle cx="15.22" cy="44.94" r="2.22" fill="#1a938d"/>
+    <circle cx="15.95" cy="37.46" r="2.22" fill="#1a938e"/>
+    <circle cx="18.60" cy="30.42" r="2.22" fill="#1a958f"/>
+    <circle cx="22.98" cy="24.31" r="2.22" fill="#1a9891"/>
+    <circle cx="28.79" cy="19.54" r="2.22" fill="#1c9b92"/>
+    <circle cx="35.64" cy="16.44" r="2.22" fill="#1e9f92"/>
+    <circle cx="43.06" cy="15.22" r="2.22" fill="#20a493"/>
+    <circle cx="50.54" cy="15.95" r="2.22" fill="#22a994"/>
+    <circle cx="57.58" cy="18.60" r="2.22" fill="#24ad94"/>
+    <circle cx="63.69" cy="22.98" r="2.22" fill="#25b195"/>
+    <circle cx="68.46" cy="28.79" r="2.22" fill="#26b495"/>
+    <circle cx="71.56" cy="35.64" r="2.22" fill="#27b596"/>
+    <circle cx="72.78" cy="43.06" r="2.22" fill="#28b696"/>
+    <circle cx="72.05" cy="50.54" r="2.22" fill="#27b696"/>
+    <circle cx="69.40" cy="57.58" r="2.22" fill="#27b495"/>
+    <circle cx="65.02" cy="63.69" r="2.22" fill="#26b195"/>
+    <circle cx="59.21" cy="68.46" r="2.22" fill="#24ae95"/>
+    <circle cx="52.36" cy="71.56" r="2.22" fill="#22aa94"/>
+    <circle cx="44.94" cy="72.78" r="2.22" fill="#20a593"/>
+    <!-- Ring 5 (outermost) -->
+    <circle cx="21.39" cy="72.01" r="2.19" fill="#1a807b"/>
+    <circle cx="16.06" cy="66.70" r="2.19" fill="#1a7c78"/>
+    <circle cx="11.95" cy="60.39" r="2.19" fill="#1a7976"/>
+    <circle cx="9.24" cy="53.37" r="2.19" fill="#1a7875"/>
+    <circle cx="8.05" cy="45.94" r="2.19" fill="#197774"/>
+    <circle cx="8.43" cy="38.42" r="2.19" fill="#197774"/>
+    <circle cx="10.37" cy="31.15" r="2.19" fill="#1a7875"/>
+    <circle cx="13.78" cy="24.44" r="2.19" fill="#1a7a77"/>
+    <circle cx="18.51" cy="18.58" r="2.19" fill="#1a7d7a"/>
+    <circle cx="24.35" cy="13.84" r="2.19" fill="#1b817d"/>
+    <circle cx="31.05" cy="10.41" r="2.19" fill="#1b8581"/>
+    <circle cx="38.32" cy="8.45" r="2.19" fill="#1b8a85"/>
+    <circle cx="45.83" cy="8.05" r="2.19" fill="#1c8f89"/>
+    <circle cx="53.27" cy="9.21" r="2.19" fill="#1d938d"/>
+    <circle cx="60.30" cy="11.90" r="2.19" fill="#1d9890"/>
+    <circle cx="66.61" cy="15.99" r="2.19" fill="#1f9b92"/>
+    <circle cx="71.94" cy="21.30" r="2.19" fill="#209e92"/>
+    <circle cx="76.05" cy="27.61" r="2.19" fill="#21a092"/>
+    <circle cx="78.76" cy="34.63" r="2.19" fill="#22a293"/>
+    <circle cx="79.95" cy="42.06" r="2.19" fill="#22a393"/>
+    <circle cx="79.57" cy="49.58" r="2.19" fill="#22a393"/>
+    <circle cx="77.63" cy="56.85" r="2.19" fill="#22a193"/>
+    <circle cx="74.22" cy="63.56" r="2.19" fill="#1f9f92"/>
+    <circle cx="69.49" cy="69.42" r="2.19" fill="#1d9c92"/>
+    <circle cx="63.65" cy="74.16" r="2.19" fill="#1c9991"/>
+    <circle cx="56.95" cy="77.59" r="2.19" fill="#1c958f"/>
+    <circle cx="49.68" cy="79.55" r="2.19" fill="#1b918c"/>
+    <circle cx="42.17" cy="79.95" r="2.19" fill="#1b8c88"/>
+    <circle cx="34.73" cy="78.79" r="2.19" fill="#1b8884"/>
+    <circle cx="27.70" cy="76.10" r="2.19" fill="#1a847f"/>
+  </g>
+</svg>
