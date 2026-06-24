@@ -1,6 +1,6 @@
 import { Box, Container, Typography, Button, Stack } from '@mui/material'
 import { colors } from '../theme'
-import { DEMO_MAILTO, stats } from '../data'
+import { CONTACT_MAILTO, stats } from '../data'
 
 export default function Hero() {
   return (
@@ -42,7 +42,7 @@ export default function Hero() {
       />
       <Container sx={{ position: 'relative' }}>
         <Typography variant="overline" sx={{ color: colors.teal }}>
-          Quantifying Procedural Medicine
+          Quantifying Surgical Mastery
         </Typography>
         <Typography
           variant="h1"
@@ -63,8 +63,8 @@ export default function Hero() {
           comparable measures of surgical skill — from the brain to the hands.
         </Typography>
         <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ mt: 4.5 }}>
-          <Button variant="contained" size="large" href={DEMO_MAILTO}>
-            Request a demo
+          <Button variant="contained" size="large" href={CONTACT_MAILTO}>
+            Contact us
           </Button>
           <Button
             variant="outlined"

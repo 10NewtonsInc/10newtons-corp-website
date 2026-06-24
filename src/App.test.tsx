@@ -23,7 +23,7 @@ describe('Corporate site', () => {
   it('shows the brand wordmark and contact email', () => {
     renderAt('/')
     expect(screen.getAllByText(/10\s*NEWTONS/i).length).toBeGreaterThan(0)
-    expect(screen.getAllByText(/hello@10newtons\.com/i).length).toBeGreaterThan(0)
+    expect(screen.getAllByText(/contact@10newtons\.com/i).length).toBeGreaterThan(0)
   })
 
   it('renders the five-step journey and the team', () => {
