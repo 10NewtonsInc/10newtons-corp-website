@@ -28,7 +28,7 @@ describe('Corporate site', () => {
 
   it('renders the five-step journey and the team', () => {
     renderAt('/')
-    expect(screen.getByRole('heading', { name: /from the operating field/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /from the operating room/i })).toBeInTheDocument()
     expect(screen.getByText(/Carla Pugh, MD, PhD/i)).toBeInTheDocument()
     expect(screen.getByText(/Reto Matter/i)).toBeInTheDocument()
   })
