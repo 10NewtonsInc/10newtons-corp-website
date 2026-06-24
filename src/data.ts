@@ -72,30 +72,6 @@ export const steps = [
   },
 ]
 
-export const cognitive = {
-  title: 'Cognitive — from EEG',
-  accent: 'teal',
-  rows: [
-    ['Focus', 'β / α attention ratio'],
-    ['Engagement', 'β / (α + θ) activation'],
-    ['Emotional Valence', 'frontal alpha asymmetry'],
-    ['Cognitive Workload', 'θ / α load index'],
-  ] as [string, string][],
-  foot: 'Welch PSD band-power analysis · 4-channel EEG @ 256 Hz',
-}
-
-export const motor = {
-  title: 'Motor Skill — from Motion',
-  accent: 'purple',
-  rows: [
-    ['Bimanual Dexterity', 'two-hand coordination'],
-    ['Economy of Motion', 'idle-time fraction'],
-    ['Speed & Smoothness', 'per-hand velocity profile'],
-    ['Rotational Control', 'gyroscopic stability'],
-  ] as [string, string][],
-  foot: 'Lab-grade signal processing · dual-hand motion @ 50 Hz',
-}
-
 export const platform = [
   {
     title: 'Multi-tenant by design',

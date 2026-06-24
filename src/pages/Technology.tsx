@@ -1,7 +1,6 @@
 import { Box, Container, Typography } from '@mui/material'
 import { colors } from '../theme'
 import SectionHeading from '../components/SectionHeading'
-import Science from '../components/Science'
 import ContactCTA from '../components/ContactCTA'
 import ArchitectureDiagram from '../components/ArchitectureDiagram'
 import { techStats, services, security, cloud, dataJourney, differentiators } from '../data'
@@ -147,7 +146,6 @@ export default function Technology() {
       <TechHero />
       <Architecture />
       <DataJourney />
-      <Science />
       <Differentiators />
       <CardGrid
         eyebrow="Security & compliance"
