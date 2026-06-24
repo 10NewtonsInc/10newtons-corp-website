@@ -1,8 +1,8 @@
 // Content sourced from the 10 Newtons investor & technology decks and the
 // existing 10newtons.com site. Single source of truth for the marketing site.
 
-export const CONTACT_EMAIL = 'hello@10newtons.com'
-export const DEMO_MAILTO = `mailto:${CONTACT_EMAIL}?subject=Request%20a%20demo%20%E2%80%94%2010%20Newtons`
+export const CONTACT_EMAIL = 'contact@10newtons.com'
+export const CONTACT_MAILTO = `mailto:${CONTACT_EMAIL}?subject=Hello%20from%2010%20Newtons.com`
 
 // Honest credibility markers (not endorsements): research lineage, clinical
 // trials, and the founder's National Academy of Medicine election.
@@ -71,30 +71,6 @@ export const steps = [
     body: 'Surgeons see where they diverge from mastery and track progress; programs get objective certification data.',
   },
 ]
-
-export const cognitive = {
-  title: 'Cognitive — from EEG',
-  accent: 'teal',
-  rows: [
-    ['Focus', 'β / α attention ratio'],
-    ['Engagement', 'β / (α + θ) activation'],
-    ['Emotional Valence', 'frontal alpha asymmetry'],
-    ['Cognitive Workload', 'θ / α load index'],
-  ] as [string, string][],
-  foot: 'Welch PSD band-power analysis · 4-channel EEG @ 256 Hz',
-}
-
-export const motor = {
-  title: 'Motor Skill — from Motion',
-  accent: 'purple',
-  rows: [
-    ['Bimanual Dexterity', 'two-hand coordination'],
-    ['Economy of Motion', 'idle-time fraction'],
-    ['Speed & Smoothness', 'per-hand velocity profile'],
-    ['Rotational Control', 'gyroscopic stability'],
-  ] as [string, string][],
-  foot: 'Lab-grade signal processing · dual-hand motion @ 50 Hz',
-}
 
 export const platform = [
   {
@@ -165,7 +141,13 @@ export const stats = [
 
 // Peer-reviewed research behind objective, sensor-based skill measurement —
 // led/co-authored by founder Dr. Carla Pugh. Citations verified against PubMed.
+export type ResearchCategory =
+  | 'Operative procedures'
+  | 'Physical exam & bedside procedures'
+  | 'The science of human performance'
+
 export interface Publication {
+  category: ResearchCategory
   journal: string
   year: number
   title: string
@@ -173,8 +155,29 @@ export interface Publication {
   url: string
 }
 
-export const research: Publication[] = [
+// Grouped by theme to make one point clear: 10 Newtons brings objective metrics
+// across the specialty boards — from complex operative procedures to physical-exam
+// and bedside procedures — grounded in the science of human performance.
+// Order within the file is the display order. Carla to add ~2 papers per group.
+export const researchGroups: { category: ResearchCategory; blurb: string }[] = [
   {
+    category: 'Operative procedures',
+    blurb: 'Objective, sensor-based measurement of complex open and operative surgical skill.',
+  },
+  {
+    category: 'Physical exam & bedside procedures',
+    blurb: 'The same objective approach applied to hands-on clinical exams and bedside procedures.',
+  },
+  {
+    category: 'The science of human performance',
+    blurb: 'The foundational science: quantifying mastery to facilitate paradigm shifts in human performance.',
+  },
+]
+
+export const research: Publication[] = [
+  // --- Operative procedures ---
+  {
+    category: 'Operative procedures',
     journal: 'J Am Coll Surg',
     year: 2025,
     title: 'Novel Use of Objective Sensor Technology: Creation of Individualized Education Plans to Develop Operative Mastery',
@@ -182,27 +185,33 @@ export const research: Publication[] = [
     url: 'https://pubmed.ncbi.nlm.nih.gov/39807792/',
   },
   {
-    journal: 'Academic Medicine',
-    year: 2024,
-    title: 'Sensor-Based Discovery of Search and Palpation Modes in the Clinical Breast Examination',
-    note: 'Sensors plus machine learning on 152 physicians — objective force data distinguished mastery-level performers.',
-    url: 'https://pubmed.ncbi.nlm.nih.gov/38207081/',
-  },
-  {
+    category: 'Operative procedures',
     journal: 'Int J Comput Assist Radiol Surg',
     year: 2022,
     title: 'Using open surgery simulation kinematic data for tool and gesture recognition',
     note: 'Motion sensors and deep learning automatically recognize surgical gestures and tools.',
     url: 'https://pubmed.ncbi.nlm.nih.gov/35419721/',
   },
+  // --- Physical exam & bedside procedures (breast exam last) ---
   {
-    journal: 'ACS Biomater. Sci. Eng.',
-    year: 2020,
-    title: 'Sensors and Psychomotor Metrics: A Unique Opportunity to Close the Gap on Surgical Processes and Outcomes',
-    note: 'Motion-tracking metrics quantify distinct dimensions of the surgical process — efficiency, readiness, errors.',
-    url: 'https://pubmed.ncbi.nlm.nih.gov/33463275/',
+    category: 'Physical exam & bedside procedures',
+    journal: 'JAMA',
+    year: 2001,
+    title: 'Use of a mechanical simulator to assess pelvic examination skills',
+    note: 'The origin: objective, sensor-based assessment of a hands-on clinical skill.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/11559282/',
   },
   {
+    category: 'Physical exam & bedside procedures',
+    journal: 'Academic Medicine',
+    year: 2024,
+    title: 'Sensor-Based Discovery of Search and Palpation Modes in the Clinical Breast Examination',
+    note: 'Sensors plus machine learning on 152 physicians — objective force data distinguished mastery-level performers.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/38207081/',
+  },
+  // --- The science of human performance ---
+  {
+    category: 'The science of human performance',
     journal: 'New England Journal of Medicine',
     year: 2015,
     title: 'Sensor technology in assessments of clinical skill',
@@ -210,11 +219,12 @@ export const research: Publication[] = [
     url: 'https://pubmed.ncbi.nlm.nih.gov/25693026/',
   },
   {
-    journal: 'JAMA',
-    year: 2001,
-    title: 'Use of a mechanical simulator to assess pelvic examination skills',
-    note: 'The origin: objective, sensor-based assessment of a hands-on clinical skill.',
-    url: 'https://pubmed.ncbi.nlm.nih.gov/11559282/',
+    category: 'The science of human performance',
+    journal: 'ACS Biomater. Sci. Eng.',
+    year: 2020,
+    title: 'Sensors and Psychomotor Metrics: A Unique Opportunity to Close the Gap on Surgical Processes and Outcomes',
+    note: 'Motion-tracking metrics quantify distinct dimensions of the surgical process — efficiency, readiness, errors.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/33463275/',
   },
 ]
 
@@ -316,24 +326,5 @@ export const differentiators = [
   {
     title: 'Objective and reproducible',
     body: 'Every metric is computed from the raw signal, versioned, and traceable back to the moment it was measured — defensible under scrutiny.',
-  },
-]
-
-export const cloud = [
-  {
-    title: 'Multi-account AWS',
-    body: 'Separate management, development, staging and production accounts with per-environment network isolation.',
-  },
-  {
-    title: 'Managed & codified',
-    body: 'A managed database and object storage, all provisioned as code for repeatable, auditable environments.',
-  },
-  {
-    title: 'Self-healing pipeline',
-    body: 'A durable job queue with sub-second dispatch and a polling fallback — jobs survive restarts and any worker can resume them.',
-  },
-  {
-    title: 'Live observability',
-    body: 'System-status monitoring, per-worker heartbeats, and in-field crash triage keep the platform running unattended.',
   },
 ]

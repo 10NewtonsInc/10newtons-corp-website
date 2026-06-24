@@ -7,11 +7,34 @@ export default function HowItWorks() {
   return (
     <Box id="how" sx={{ py: { xs: 8, md: 12 }, bgcolor: colors.card }}>
       <Container>
-        <SectionHeading
-          eyebrow="How it works"
-          title="From the operating field to better surgeons"
-          subtitle="One continuous workflow turns any recorded session into objective, comparable performance feedback."
-        />
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: { xs: 'column-reverse', md: 'row' },
+            alignItems: 'center',
+            gap: { xs: 3, md: 6 },
+          }}
+        >
+          <Box sx={{ flex: 1 }}>
+            <SectionHeading
+              eyebrow="How it works"
+              title="From the operating room to better surgeons"
+              subtitle="One continuous workflow turns any recorded session into objective, comparable performance feedback."
+            />
+          </Box>
+          <Box
+            component="img"
+            src="/surgeon-gear.png"
+            alt="A surgeon wearing the 10 Newtons EEG headband and wrist motion sensor"
+            sx={{
+              width: { xs: 200, sm: 240, md: 300 },
+              height: 'auto',
+              flexShrink: 0,
+              alignSelf: 'center',
+              mb: { md: 4 },
+            }}
+          />
+        </Box>
         <Box
           sx={{
             display: 'grid',

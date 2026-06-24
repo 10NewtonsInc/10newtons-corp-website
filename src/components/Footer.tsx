@@ -6,7 +6,6 @@ import { colors } from '../theme'
 
 const links = [
   { label: 'How it works', to: '/#how' },
-  { label: 'Science', to: '/#science' },
   { label: 'Technology', to: '/technology' },
   { label: 'Team', to: '/#team' },
   { label: 'Research', to: '/#research' },

@@ -14,15 +14,15 @@ import {
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import Logo from './Logo'
-import { DEMO_MAILTO } from '../data'
+import { CONTACT_MAILTO } from '../data'
 
 // Section links resolve to the home page + hash so they work from any route;
 // `page` links are real routes.
 const links: { label: string; to: string; page?: boolean }[] = [
   { label: 'How it works', to: '/#how' },
-  { label: 'Science', to: '/#science' },
   { label: 'Technology', to: '/technology', page: true },
   { label: 'Team', to: '/#team' },
+  { label: 'Research', to: '/#research' },
 ]
 
 export default function NavBar() {
@@ -44,8 +44,8 @@ export default function NavBar() {
                 {l.label}
               </Button>
             ))}
-            <Button variant="contained" href={DEMO_MAILTO} sx={{ ml: 1 }}>
-              Request a demo
+            <Button variant="contained" href={CONTACT_MAILTO} sx={{ ml: 1 }}>
+              Contact us
             </Button>
           </Box>
           <IconButton sx={{ display: { xs: 'inline-flex', md: 'none' } }} onClick={() => setOpen(true)} aria-label="menu">
@@ -61,8 +61,8 @@ export default function NavBar() {
                 <ListItemText primary={l.label} />
               </ListItemButton>
             ))}
-            <ListItemButton component="a" href={DEMO_MAILTO}>
-              <ListItemText primary="Request a demo" />
+            <ListItemButton component="a" href={CONTACT_MAILTO}>
+              <ListItemText primary="Contact us" />
             </ListItemButton>
           </List>
         </Box>

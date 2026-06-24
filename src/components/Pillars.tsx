@@ -11,8 +11,8 @@ export default function Pillars() {
       <Container>
         <SectionHeading
           eyebrow="Discover the Power of Data"
-          title="Metrics that move medical training forward"
-          subtitle="Our validated sensor suite integrates with the simulations clinicians already use — delivering performance data that is objective, actionable, mobile and scalable."
+          title="Objective metrics for better surgeons"
+          subtitle="Our validated sensor suite integrates with the simulations surgeons already use — delivering performance data that is objective, actionable, mobile and scalable."
         />
         <Box
           sx={{

@@ -23,12 +23,12 @@ describe('Corporate site', () => {
   it('shows the brand wordmark and contact email', () => {
     renderAt('/')
     expect(screen.getAllByText(/10\s*NEWTONS/i).length).toBeGreaterThan(0)
-    expect(screen.getAllByText(/hello@10newtons\.com/i).length).toBeGreaterThan(0)
+    expect(screen.getAllByText(/contact@10newtons\.com/i).length).toBeGreaterThan(0)
   })
 
   it('renders the five-step journey and the team', () => {
     renderAt('/')
-    expect(screen.getByRole('heading', { name: /from the operating field/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /from the operating room/i })).toBeInTheDocument()
     expect(screen.getByText(/Carla Pugh, MD, PhD/i)).toBeInTheDocument()
     expect(screen.getByText(/Reto Matter/i)).toBeInTheDocument()
   })
