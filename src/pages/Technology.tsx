@@ -3,7 +3,7 @@ import { colors } from '../theme'
 import SectionHeading from '../components/SectionHeading'
 import ContactCTA from '../components/ContactCTA'
 import ArchitectureDiagram from '../components/ArchitectureDiagram'
-import { techStats, services, security, cloud, dataJourney, differentiators } from '../data'
+import { techStats, services, security, dataJourney, differentiators } from '../data'
 
 function TechHero() {
   return (
@@ -153,12 +153,6 @@ export default function Technology() {
         subtitle="Layered authentication, encryption and least-privilege access across every surface — and a deliberate posture on clinical data."
         items={security}
         tinted
-      />
-      <CardGrid
-        eyebrow="Cloud & reliability"
-        title="A real cloud foundation, built to run unattended"
-        subtitle="Multi-account isolation, infrastructure as code, and self-healing job processing with live observability."
-        items={cloud}
       />
       <ContactCTA />
     </>

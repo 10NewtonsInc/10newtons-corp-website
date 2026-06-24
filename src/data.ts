@@ -328,22 +328,3 @@ export const differentiators = [
     body: 'Every metric is computed from the raw signal, versioned, and traceable back to the moment it was measured — defensible under scrutiny.',
   },
 ]
-
-export const cloud = [
-  {
-    title: 'Multi-account AWS',
-    body: 'Separate management, development, staging and production accounts with per-environment network isolation.',
-  },
-  {
-    title: 'Managed & codified',
-    body: 'A managed database and object storage, all provisioned as code for repeatable, auditable environments.',
-  },
-  {
-    title: 'Self-healing pipeline',
-    body: 'A durable job queue with sub-second dispatch and a polling fallback — jobs survive restarts and any worker can resume them.',
-  },
-  {
-    title: 'Live observability',
-    body: 'System-status monitoring, per-worker heartbeats, and in-field crash triage keep the platform running unattended.',
-  },
-]
