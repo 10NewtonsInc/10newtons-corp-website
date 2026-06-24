@@ -6,7 +6,7 @@ export default function Logo({ light = false }: { light?: boolean }) {
     <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.1 }}>
       <Box
         component="img"
-        src={light ? '/logo-mark-light.svg' : '/logo-mark.svg'}
+        src={light ? '/logo-mark-light.png' : '/logo-mark.png'}
         alt=""
         aria-hidden
         sx={{ width: 34, height: 34, display: 'block' }}
