@@ -1,16 +1,10 @@
-import { Box, Container, Typography, Chip } from '@mui/material'
+import { Box, Container, Typography } from '@mui/material'
 import { colors } from '../theme'
 import SectionHeading from '../components/SectionHeading'
 import Science from '../components/Science'
 import ContactCTA from '../components/ContactCTA'
 import ArchitectureDiagram from '../components/ArchitectureDiagram'
-import { techStats, services, sensors, security, cloud, dataJourney, differentiators } from '../data'
-
-const accentMap: Record<string, string> = {
-  teal: colors.teal,
-  purple: colors.purple,
-  blue: colors.blue,
-}
+import { techStats, services, security, cloud, dataJourney, differentiators } from '../data'
 
 function TechHero() {
   return (
@@ -125,34 +119,6 @@ function Differentiators() {
   )
 }
 
-function Capture() {
-  return (
-    <Box sx={{ py: { xs: 8, md: 12 }, bgcolor: colors.card }}>
-      <Container>
-        <SectionHeading
-          eyebrow="The edge"
-          title="Study-grade capture, on a tablet"
-          subtitle="Three wireless sensors, fused on-device and recorded crash-safe — no lab rig required."
-        />
-        <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', md: 'repeat(3, 1fr)' }, gap: 3 }}>
-          {sensors.map((s) => (
-            <Box key={s.title} sx={{ position: 'relative', bgcolor: '#fff', border: '1px solid', borderColor: 'divider', borderRadius: 3, p: 3, pl: 3.25, overflow: 'hidden' }}>
-              <Box sx={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 6, bgcolor: accentMap[s.accent] }} />
-              <Typography variant="h6" sx={{ fontSize: '1.1rem' }}>{s.title}</Typography>
-              <Chip
-                label={s.spec}
-                size="small"
-                sx={{ my: 1, fontFamily: '"Montserrat"', fontWeight: 600, color: accentMap[s.accent], bgcolor: `${accentMap[s.accent]}14` }}
-              />
-              <Typography variant="body2" sx={{ color: colors.cardBody }}>{s.body}</Typography>
-            </Box>
-          ))}
-        </Box>
-      </Container>
-    </Box>
-  )
-}
-
 function CardGrid({ eyebrow, title, subtitle, items, tinted }: { eyebrow: string; title: string; subtitle: string; items: { title: string; body: string }[]; tinted?: boolean }) {
   const accents = [colors.teal, colors.blue, colors.purple, colors.teal]
   return (
@@ -181,7 +147,6 @@ export default function Technology() {
       <TechHero />
       <Architecture />
       <DataJourney />
-      <Capture />
       <Science />
       <Differentiators />
       <CardGrid
