@@ -258,6 +258,22 @@ export const research: Publication[] = [
     note: 'Motion-tracking metrics quantify distinct dimensions of the surgical process — efficiency, readiness, errors.',
     url: 'https://pubmed.ncbi.nlm.nih.gov/33463275/',
   },
+  {
+    category: 'The science of human performance',
+    journal: 'IEEE Trans Biomed Eng',
+    year: 2019,
+    title: 'Combining Metrics From Clinical Simulators and Sensorimotor Tasks Can Reveal the Training Background of Surgeons',
+    note: 'Combined simulator and sensorimotor metrics could identify a surgeon’s training background — skill leaves a measurable signature.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/30629489/',
+  },
+  {
+    category: 'The science of human performance',
+    journal: 'Am J Surg',
+    year: 2020,
+    title: 'Translating motion tracking data into resident feedback: An opportunity for streamlined video coaching',
+    note: 'Turning motion-tracking data into targeted resident feedback — a path to streamlined, objective video coaching.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/32014295/',
+  },
 ]
 
 // ---------------------------------------------------------------------------
