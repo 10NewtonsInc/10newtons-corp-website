@@ -63,7 +63,7 @@ export const steps = [
   {
     n: '4',
     title: 'Compare',
-    body: 'Results are benchmarked against faculty “practice-ready” standards and against peers on the same procedure.',
+    body: 'Results are benchmarked against “practice-ready” standards and mastery metrics for surgeons and surgical teams.',
   },
   {
     n: '5',
