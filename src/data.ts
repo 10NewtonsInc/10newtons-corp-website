@@ -68,7 +68,7 @@ export const steps = [
   {
     n: '5',
     title: 'Improve',
-    body: 'Surgeons see where they diverge from mastery and track progress; programs get objective certification data.',
+    body: 'Surgeons and teams see where they diverge from mastery, engage in VIP training with our strategic partners and reassess performance to track progress.',
   },
 ]
 
