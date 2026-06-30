@@ -40,7 +40,7 @@ export const pillars = [
   },
   {
     title: 'Scalable',
-    body: 'One multi-tenant platform serving many institutions, from a single resident to an entire program.',
+    body: 'One multi-tenant platform serving many institutions and medical organizations from a single trainee to an entire team or program.',
   },
 ]
 
