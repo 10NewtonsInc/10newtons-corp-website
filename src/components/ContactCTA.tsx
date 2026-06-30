@@ -13,7 +13,7 @@ export default function ContactCTA() {
           Quantifying surgical mastery.
         </Typography>
         <Typography sx={{ mt: 2.5, color: colors.navyLight, fontWeight: 300, fontSize: '1.15rem', maxWidth: 600, mx: 'auto' }}>
-          For institutions, investors and partners who want to put objective skill measurement in front of surgeons.
+          For institutions, investors and partners who know that you cannot improve what you cannot measure.
         </Typography>
         <Button variant="contained" size="large" href={CONTACT_MAILTO} sx={{ mt: 4 }}>
           Contact us
