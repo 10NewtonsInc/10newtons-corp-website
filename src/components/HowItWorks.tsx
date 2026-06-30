@@ -19,7 +19,7 @@ export default function HowItWorks() {
             <SectionHeading
               eyebrow="How it works"
               title="From the operating room to better procedural outcomes"
-              subtitle="One continuous workflow turns any recorded session into objective, comparable performance feedback."
+              subtitle="One continuous workflow turns any recorded session into objective, comparable performance feedback for surgeons and surgical teams."
             />
           </Box>
           <Box
