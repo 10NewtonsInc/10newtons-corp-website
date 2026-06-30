@@ -115,7 +115,7 @@ export const team: Member[] = [
     role: 'Chief Executive Officer',
     photo: '/team/erwan.jpg',
     linkedin: '', // TODO: add Erwan's LinkedIn profile URL
-    bio: "A digital-health executive with 20+ years scaling regulated medtech from concept to market, Erwan leads 10 Newtons' commercialization and growth, drawing on a track record of bringing clinical and consumer health products to market.",
+    bio: "A digital-health executive with 20+ years scaling regulated medtech from concept to market, Erwan leads 10 Newtons' commercialization and growth, drawing on a solid track record of bringing clinical and consumer health products to market.",
   },
   {
     name: CTO_NAME,
