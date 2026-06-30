@@ -36,7 +36,7 @@ export const pillars = [
   },
   {
     title: 'Mobile',
-    body: 'A validated wireless sensor suite that runs on a tablet and integrates with the simulations clinicians already use.',
+    body: 'A validated wireless sensor suite that runs on a tablet and readily integrates with surgeons and surgical teams in any venue or platform.',
   },
   {
     title: 'Scalable',
