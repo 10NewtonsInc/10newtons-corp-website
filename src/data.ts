@@ -192,6 +192,22 @@ export const research: Publication[] = [
     note: 'Motion sensors and deep learning automatically recognize surgical gestures and tools.',
     url: 'https://pubmed.ncbi.nlm.nih.gov/35419721/',
   },
+  {
+    category: 'Operative procedures',
+    journal: 'Ann Surg',
+    year: 2020,
+    title: 'Situating Artificial Intelligence in Surgery: A Focus on Disease Severity',
+    note: 'A framework for applying AI in surgery that accounts for disease severity and case complexity — not technique alone.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/33759839/',
+  },
+  {
+    category: 'Operative procedures',
+    journal: 'Surgery',
+    year: 2018,
+    title: 'Shortcut assessment: Can residents’ operative performance be determined in the first five minutes of an operative task?',
+    note: 'Motion data from the first five minutes of an operative task predicted overall performance — an early, objective skill read.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/29728259/',
+  },
   // --- Physical exam & bedside procedures (breast exam last) ---
   {
     category: 'Physical exam & bedside procedures',
