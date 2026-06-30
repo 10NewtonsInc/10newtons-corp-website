@@ -52,8 +52,8 @@ export const steps = [
   },
   {
     n: '2',
-    title: 'Correlate',
-    body: 'Brain, motion and audio are uploaded and time-aligned to the procedure video, second by second.',
+    title: 'Integrate',
+    body: 'Brain, motion and audio are uploaded and time synched with procedure video, second by second.',
   },
   {
     n: '3',
