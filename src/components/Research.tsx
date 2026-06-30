@@ -14,7 +14,9 @@ export default function Research() {
           subtitle="Objective, sensor-based measurement of clinical skill isn't a hunch — it's a field our founder, Dr. Carla Pugh, helped build. From complex operative procedures to physical exams at the bedside, the work spans all clinical specialties. Recognized by election to the National Academy of Medicine and a recent precision education contract from the American Medical Association."
         />
         {researchGroups.map((group) => {
-          const papers = research.filter((p) => p.category === group.category)
+          const papers = research
+            .filter((p) => p.category === group.category)
+            .sort((a, b) => a.year - b.year)
           if (papers.length === 0) return null
           return (
             <Box key={group.category} sx={{ mb: { xs: 5, md: 6 }, '&:last-of-type': { mb: 0 } }}>
@@ -29,7 +31,7 @@ export default function Research() {
               <Box
                 sx={{
                   display: 'grid',
-                  gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' },
+                  gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)', md: 'repeat(4, 1fr)' },
                   gap: 3,
                 }}
               >
