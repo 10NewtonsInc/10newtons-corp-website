@@ -8,7 +8,7 @@ export const CONTACT_MAILTO = `mailto:${CONTACT_EMAIL}?subject=Hello%20from%2010
 // trials, and the founder's National Academy of Medicine election.
 export const affiliations = [
   { name: 'Stanford', note: 'Founding research' },
-  { name: 'IRCAD', note: 'Clinical trials' },
+  { name: 'IRCAD', note: 'Applied Metrics Pilot' },
   { name: 'National Academy of Medicine', note: 'Founder, elected 2021' },
 ]
 
