@@ -219,6 +219,22 @@ export const research: Publication[] = [
   },
   {
     category: 'Physical exam & bedside procedures',
+    journal: 'Surgery',
+    year: 2020,
+    title: 'Use of sensors to quantify procedural idle time: Validity evidence for a new mastery metric',
+    note: 'Sensor-measured idle time during intubation separated experienced from novice performers — a validated mastery metric for a bedside procedure.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/31708084/',
+  },
+  {
+    category: 'Physical exam & bedside procedures',
+    journal: 'Am J Surg',
+    year: 2016,
+    title: 'Can a virtual reality assessment of fine motor skill predict successful central line insertion?',
+    note: 'A virtual-reality fine-motor-skill assessment predicted needle-insertion performance for central line placement.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/27649977/',
+  },
+  {
+    category: 'Physical exam & bedside procedures',
     journal: 'Academic Medicine',
     year: 2024,
     title: 'Sensor-Based Discovery of Search and Palpation Modes in the Clinical Breast Examination',
