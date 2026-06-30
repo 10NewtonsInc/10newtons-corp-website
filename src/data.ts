@@ -32,7 +32,7 @@ export const pillars = [
   },
   {
     title: 'Actionable',
-    body: 'Every metric maps to the exact moment and maneuver that produced it, so feedback is specific.',
+    body: 'Every metric maps to the exact moment and maneuver that produced it, so feedback is precise and specific.',
   },
   {
     title: 'Mobile',
