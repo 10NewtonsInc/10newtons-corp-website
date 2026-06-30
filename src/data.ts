@@ -48,7 +48,7 @@ export const steps = [
   {
     n: '1',
     title: 'Capture',
-    body: 'A surgeon wears the EEG band and two hand sensors and records a practice rig or a live OR case — right from a tablet.',
+    body: 'A surgeon wears the EEG band and two hand sensors and records a procedure — right from a mobile device.',
   },
   {
     n: '2',
