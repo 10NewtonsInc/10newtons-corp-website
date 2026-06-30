@@ -11,7 +11,7 @@ export default function Research() {
         <SectionHeading
           eyebrow="Backed by the science"
           title="Two decades of peer-reviewed research"
-          subtitle="Objective, sensor-based measurement of clinical skill isn't a hunch — it's a field our founder, Dr. Carla Pugh, helped build. From complex operative procedures to physical exams at the bedside, the work spans the specialty boards. Recognized by election to the National Academy of Medicine."
+          subtitle="Objective, sensor-based measurement of clinical skill isn't a hunch — it's a field our founder, Dr. Carla Pugh, helped build. From complex operative procedures to physical exams at the bedside, the work spans all clinical specialties. Recognized by election to the National Academy of Medicine and a recent precision education contract from the American Medical Association."
         />
         {researchGroups.map((group) => {
           const papers = research.filter((p) => p.category === group.category)

@@ -8,7 +8,7 @@ export const CONTACT_MAILTO = `mailto:${CONTACT_EMAIL}?subject=Hello%20from%2010
 // trials, and the founder's National Academy of Medicine election.
 export const affiliations = [
   { name: 'Stanford', note: 'Founding research' },
-  { name: 'IRCAD', note: 'Clinical trials' },
+  { name: 'IRCAD', note: 'Applied Metrics Pilot' },
   { name: 'National Academy of Medicine', note: 'Founder, elected 2021' },
 ]
 
@@ -32,15 +32,15 @@ export const pillars = [
   },
   {
     title: 'Actionable',
-    body: 'Every metric maps to the exact moment and maneuver that produced it, so feedback is specific.',
+    body: 'Every metric maps to the exact moment and maneuver that produced it, so feedback is precise and specific.',
   },
   {
     title: 'Mobile',
-    body: 'A validated wireless sensor suite that runs on a tablet and integrates with the simulations clinicians already use.',
+    body: 'A validated wireless sensor suite that runs on a tablet and readily integrates with surgeons and surgical teams in any venue or platform.',
   },
   {
     title: 'Scalable',
-    body: 'One multi-tenant platform serving many institutions, from a single resident to an entire program.',
+    body: 'One multi-tenant platform serving many institutions and medical organizations from a single trainee to an entire team or program.',
   },
 ]
 
@@ -48,12 +48,12 @@ export const steps = [
   {
     n: '1',
     title: 'Capture',
-    body: 'A surgeon wears the EEG band and two hand sensors and records a practice rig or a live OR case — right from a tablet.',
+    body: 'A surgeon wears the EEG band and two hand sensors and records a procedure — right from a mobile device.',
   },
   {
     n: '2',
-    title: 'Correlate',
-    body: 'Brain, motion and audio are uploaded and time-aligned to the procedure video, second by second.',
+    title: 'Integrate',
+    body: 'Brain, motion and audio are uploaded and time synched with procedure video, second by second.',
   },
   {
     n: '3',
@@ -63,12 +63,12 @@ export const steps = [
   {
     n: '4',
     title: 'Compare',
-    body: 'Results are benchmarked against faculty “practice-ready” standards and against peers on the same procedure.',
+    body: 'Results are benchmarked against “practice-ready” standards and mastery metrics for surgeons and surgical teams.',
   },
   {
     n: '5',
     title: 'Improve',
-    body: 'Surgeons see where they diverge from mastery and track progress; programs get objective certification data.',
+    body: 'Surgeons and teams see where they diverge from mastery, engage in VIP training with our strategic partners and reassess performance to track progress.',
   },
 ]
 
@@ -115,7 +115,7 @@ export const team: Member[] = [
     role: 'Chief Executive Officer',
     photo: '/team/erwan.jpg',
     linkedin: '', // TODO: add Erwan's LinkedIn profile URL
-    bio: "A digital-health executive with 20+ years scaling regulated medtech from concept to market, Erwan leads 10 Newtons' commercialization and growth, drawing on a track record of bringing clinical and consumer health products to market.",
+    bio: "A digital-health executive with 20+ years scaling regulated medtech from concept to market, Erwan leads 10 Newtons' commercialization and growth, drawing on a solid track record of bringing clinical and consumer health products to market.",
   },
   {
     name: CTO_NAME,
@@ -192,6 +192,22 @@ export const research: Publication[] = [
     note: 'Motion sensors and deep learning automatically recognize surgical gestures and tools.',
     url: 'https://pubmed.ncbi.nlm.nih.gov/35419721/',
   },
+  {
+    category: 'Operative procedures',
+    journal: 'Ann Surg',
+    year: 2020,
+    title: 'Situating Artificial Intelligence in Surgery: A Focus on Disease Severity',
+    note: 'A framework for applying AI in surgery that accounts for disease severity and case complexity — not technique alone.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/33759839/',
+  },
+  {
+    category: 'Operative procedures',
+    journal: 'Surgery',
+    year: 2018,
+    title: 'Shortcut assessment: Can residents’ operative performance be determined in the first five minutes of an operative task?',
+    note: 'Motion data from the first five minutes of an operative task predicted overall performance — an early, objective skill read.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/29728259/',
+  },
   // --- Physical exam & bedside procedures (breast exam last) ---
   {
     category: 'Physical exam & bedside procedures',
@@ -200,6 +216,22 @@ export const research: Publication[] = [
     title: 'Use of a mechanical simulator to assess pelvic examination skills',
     note: 'The origin: objective, sensor-based assessment of a hands-on clinical skill.',
     url: 'https://pubmed.ncbi.nlm.nih.gov/11559282/',
+  },
+  {
+    category: 'Physical exam & bedside procedures',
+    journal: 'Surgery',
+    year: 2020,
+    title: 'Use of sensors to quantify procedural idle time: Validity evidence for a new mastery metric',
+    note: 'Sensor-measured idle time during intubation separated experienced from novice performers — a validated mastery metric for a bedside procedure.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/31708084/',
+  },
+  {
+    category: 'Physical exam & bedside procedures',
+    journal: 'Am J Surg',
+    year: 2016,
+    title: 'Can a virtual reality assessment of fine motor skill predict successful central line insertion?',
+    note: 'A virtual-reality fine-motor-skill assessment predicted needle-insertion performance for central line placement.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/27649977/',
   },
   {
     category: 'Physical exam & bedside procedures',
@@ -225,6 +257,22 @@ export const research: Publication[] = [
     title: 'Sensors and Psychomotor Metrics: A Unique Opportunity to Close the Gap on Surgical Processes and Outcomes',
     note: 'Motion-tracking metrics quantify distinct dimensions of the surgical process — efficiency, readiness, errors.',
     url: 'https://pubmed.ncbi.nlm.nih.gov/33463275/',
+  },
+  {
+    category: 'The science of human performance',
+    journal: 'IEEE Trans Biomed Eng',
+    year: 2019,
+    title: 'Combining Metrics From Clinical Simulators and Sensorimotor Tasks Can Reveal the Training Background of Surgeons',
+    note: 'Combined simulator and sensorimotor metrics could identify a surgeon’s training background — skill leaves a measurable signature.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/30629489/',
+  },
+  {
+    category: 'The science of human performance',
+    journal: 'Am J Surg',
+    year: 2020,
+    title: 'Translating motion tracking data into resident feedback: An opportunity for streamlined video coaching',
+    note: 'Turning motion-tracking data into targeted resident feedback — a path to streamlined, objective video coaching.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/32014295/',
   },
 ]
 

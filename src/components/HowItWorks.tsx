@@ -18,8 +18,8 @@ export default function HowItWorks() {
           <Box sx={{ flex: 1 }}>
             <SectionHeading
               eyebrow="How it works"
-              title="From the operating room to better surgeons"
-              subtitle="One continuous workflow turns any recorded session into objective, comparable performance feedback."
+              title="From the operating room to better procedural outcomes"
+              subtitle="One continuous workflow turns any recorded session into objective, comparable performance feedback for surgeons and surgical teams."
             />
           </Box>
           <Box
