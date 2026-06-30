@@ -12,7 +12,7 @@ export default function Pillars() {
         <SectionHeading
           eyebrow="Discover the Power of Data"
           title="Objective metrics for better surgeons"
-          subtitle="Our validated sensor suite integrates with the simulations surgeons already use — delivering performance data that is objective, actionable, mobile and scalable."
+          subtitle="Our validated sensor suite is procedure and platform agnostic, integrating with any clinical procedure, approach or simulation that surgeons already use — delivering performance data that is objective, actionable, mobile and scalable."
         />
         <Box
           sx={{
