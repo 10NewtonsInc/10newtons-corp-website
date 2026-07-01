@@ -5,6 +5,7 @@ export const colors = {
   charcoal: '#3D3E44', // primary text
   navy: '#22313A', // dark bands
   teal: '#0E897F', // primary accent
+  tealBright: '#34B3A4', // lighter teal for legible accents on dark bands (AA on navy)
   purple: '#7030A0', // secondary accent
   blue: '#5E98F1', // tertiary accent
   card: '#F4F5FA', // card background
