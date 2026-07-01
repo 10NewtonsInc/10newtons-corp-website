@@ -107,28 +107,28 @@ export const team: Member[] = [
     name: 'Carla Pugh, MD, PhD',
     role: 'Founder & Chief Medical Officer',
     photo: '/team/carla.jpg',
-    linkedin: '', // TODO: add Carla's LinkedIn profile URL
+    linkedin: 'https://www.linkedin.com/in/carla-pugh-2ab0b511b/',
     bio: 'A Stanford surgery professor and pioneer in using motion and sensor technology to measure clinical skill, Carla founded 10 Newtons to turn decades of research into an objective standard for surgical training. Her work has reshaped how procedural competence is assessed across medicine.',
   },
   {
     name: 'Erwan Rivet',
     role: 'Chief Executive Officer',
     photo: '/team/erwan.jpg',
-    linkedin: '', // TODO: add Erwan's LinkedIn profile URL
+    linkedin: 'https://www.linkedin.com/in/erivetglobaldigihlthexec/',
     bio: "A digital-health executive with 20+ years scaling regulated medtech from concept to market, Erwan leads 10 Newtons' commercialization and growth, drawing on a solid track record of bringing clinical and consumer health products to market.",
   },
   {
     name: CTO_NAME,
     role: 'Chief Technology Officer',
     photo: '/team/cto.jpg',
-    linkedin: '', // TODO: add Reto's LinkedIn profile URL
+    linkedin: 'https://www.linkedin.com/in/rmatter/',
     bio: "A technology leader with 30+ years building data and AI platforms in regulated healthcare. He led engineering and privacy at Octave's AI diagnostics platform and earlier advised Nemaris — a surgical-simulation pioneer acquired by Globus Medical — bringing rare command of healthcare AI, compliance, and the operating room to 10 Newtons.",
   },
   {
     name: 'Jon Brilliant',
     role: 'Chief Financial Officer',
     photo: '/team/jon.jpg',
-    linkedin: '', // TODO: add Jon's LinkedIn profile URL
+    linkedin: 'https://www.linkedin.com/in/jonbrilliant/',
     bio: 'A serial healthcare entrepreneur and operator, Jon has founded and scaled companies including Welldoc, Bigfoot Biomedical, and Luna Diabetes, with deep experience financing and building regulated digital-health businesses.',
   },
 ]
