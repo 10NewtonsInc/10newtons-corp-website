@@ -12,6 +12,16 @@
   </head>
   <body>
     <div id="root"></div>
+    <!--
+      Static form for Netlify's build-time form detection. The real form is
+      rendered by React (ContactForm.tsx) and isn't in the static HTML, so
+      Netlify needs this hidden copy to register the "contact" form + fields.
+    -->
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

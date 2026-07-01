@@ -1,6 +1,6 @@
 import { Box, Container, Typography, Button, Stack } from '@mui/material'
 import { colors } from '../theme'
-import { CONTACT_MAILTO, stats } from '../data'
+import { stats } from '../data'
 
 export default function Hero() {
   return (
@@ -66,7 +66,7 @@ export default function Hero() {
           comparable measures of surgical skill — from the brain to the hands.
         </Typography>
         <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ mt: 4.5 }}>
-          <Button variant="contained" size="large" href={CONTACT_MAILTO}>
+          <Button variant="contained" size="large" href="#contact">
             Contact us
           </Button>
           <Button

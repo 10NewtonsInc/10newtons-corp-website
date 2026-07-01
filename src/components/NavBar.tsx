@@ -14,7 +14,6 @@ import {
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import Logo from './Logo'
-import { CONTACT_MAILTO } from '../data'
 
 // Section links resolve to the home page + hash so they work from any route;
 // `page` links are real routes.
@@ -44,7 +43,7 @@ export default function NavBar() {
                 {l.label}
               </Button>
             ))}
-            <Button variant="contained" href={CONTACT_MAILTO} sx={{ ml: 1 }}>
+            <Button variant="contained" component={RouterLink} to="/#contact" sx={{ ml: 1 }}>
               Contact us
             </Button>
           </Box>
@@ -61,7 +60,7 @@ export default function NavBar() {
                 <ListItemText primary={l.label} />
               </ListItemButton>
             ))}
-            <ListItemButton component="a" href={CONTACT_MAILTO}>
+            <ListItemButton component={RouterLink} to="/#contact">
               <ListItemText primary="Contact us" />
             </ListItemButton>
           </List>
