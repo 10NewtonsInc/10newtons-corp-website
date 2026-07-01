@@ -11,7 +11,7 @@ export default function Hero() {
         overflow: 'hidden',
         bgcolor: colors.navy,
         color: '#fff',
-        pt: { xs: 9, md: 14 },
+        pt: { xs: 14, md: 19 },
         pb: { xs: 9, md: 13 },
       }}
     >
