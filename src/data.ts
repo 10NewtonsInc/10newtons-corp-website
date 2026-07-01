@@ -58,7 +58,7 @@ export const steps = [
   {
     n: '3',
     title: 'Analyze',
-    body: 'The platform computes objective biomarkers — focus, workload, dexterity — for every phase of the case.',
+    body: 'The platform computes objective biomarkers and auto-annotates relevant video assets for every phase of the case.',
   },
   {
     n: '4',
@@ -135,7 +135,7 @@ export const team: Member[] = [
 
 export const stats = [
   { value: '256 Hz', label: 'EEG capture, plus dual-hand motion' },
-  { value: '8', label: 'objective biomarkers per session' },
+  { value: '38', label: 'objective biomarkers per session' },
   { value: '1', label: 'continuous workflow, capture to insight' },
 ]
 
@@ -162,7 +162,7 @@ export interface Publication {
 export const researchGroups: { category: ResearchCategory; blurb: string }[] = [
   {
     category: 'Operative procedures',
-    blurb: 'Objective, sensor-based measurement of complex open and operative surgical skill.',
+    blurb: 'Objective, sensor-based measurement of open, laparoscopic and robotic skills.',
   },
   {
     category: 'Physical exam & bedside procedures',
