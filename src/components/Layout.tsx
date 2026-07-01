@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import NavBar from './NavBar'
 import Footer from './Footer'
+import CookieConsent from './CookieConsent'
 
 // Scroll to the hash target on navigation (works across routes), else to top.
 function ScrollManager() {
@@ -28,6 +29,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <Footer />
+      <CookieConsent />
     </>
   )
 }
