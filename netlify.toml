@@ -5,10 +5,3 @@
 
 [build.environment]
   NODE_VERSION = "20"
-
-# Keep the unreleased preview out of search engines. REMOVE this header
-# (or this whole block) when the site goes public so prod gets indexed.
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Robots-Tag = "noindex, nofollow"
