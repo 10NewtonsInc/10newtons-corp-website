@@ -1,6 +1,7 @@
-import { Box, Container, Typography, Button } from '@mui/material'
+import { Box, Container, Typography } from '@mui/material'
 import { colors } from '../theme'
-import { CONTACT_EMAIL, CONTACT_MAILTO } from '../data'
+import { CONTACT_EMAIL } from '../data'
+import ContactForm from './ContactForm'
 
 export default function ContactCTA() {
   return (
@@ -15,11 +16,9 @@ export default function ContactCTA() {
         <Typography sx={{ mt: 2.5, color: colors.navyLight, fontWeight: 300, fontSize: '1.15rem', maxWidth: 600, mx: 'auto' }}>
           For institutions, investors and partners who know that you cannot improve what you cannot measure.
         </Typography>
-        <Button variant="contained" size="large" href={CONTACT_MAILTO} sx={{ mt: 4 }}>
-          Contact us
-        </Button>
-        <Typography sx={{ mt: 2.5, color: colors.navyLight }}>
-          or email us at{' '}
+        <ContactForm />
+        <Typography sx={{ mt: 3, color: colors.navyLight }}>
+          or email us directly at{' '}
           <Box component="a" href={`mailto:${CONTACT_EMAIL}`} sx={{ color: '#fff', textDecoration: 'none', borderBottom: '1px solid rgba(255,255,255,0.4)' }}>
             {CONTACT_EMAIL}
           </Box>

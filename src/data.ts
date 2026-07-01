@@ -2,7 +2,6 @@
 // existing 10newtons.com site. Single source of truth for the marketing site.
 
 export const CONTACT_EMAIL = 'contact@10newtons.com'
-export const CONTACT_MAILTO = `mailto:${CONTACT_EMAIL}?subject=Hello%20from%2010%20Newtons.com`
 
 // Honest credibility markers (not endorsements): research lineage, clinical
 // trials, and the founder's National Academy of Medicine election.
