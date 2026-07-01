@@ -41,7 +41,10 @@ export default function Hero() {
         }}
       />
       <Container sx={{ position: 'relative' }}>
-        <Typography variant="overline" sx={{ color: colors.teal }}>
+        <Typography
+          variant="overline"
+          sx={{ color: colors.tealBright, fontSize: { xs: '0.9rem', md: '1.05rem' } }}
+        >
           Quantifying Surgical Mastery
         </Typography>
         <Typography
